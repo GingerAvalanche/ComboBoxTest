@@ -54,7 +54,8 @@ namespace ComboBoxTest.ViewModels
             set
             {
                 this.RaiseAndSetIfChanged(ref f1, value);
-                PL2 = new[] { $"{fl1[int.Parse(f1[^1..])]}0", $"{fl1[int.Parse(f1[^1..])]}1", $"{fl1[int.Parse(f1[^1..])]}2", $"{fl1[int.Parse(f1[^1..])]}3",};
+                if (value is not null)
+                    PL2 = new[] { $"{fl1[int.Parse(f1[^1..])]}0", $"{fl1[int.Parse(f1[^1..])]}1", $"{fl1[int.Parse(f1[^1..])]}2", $"{fl1[int.Parse(f1[^1..])]}3",};
             }
         }
         public string P2
@@ -63,7 +64,8 @@ namespace ComboBoxTest.ViewModels
             set
             {
                 this.RaiseAndSetIfChanged(ref f2, value);
-                PL3 = new[] { $"{fl2[int.Parse(f2[^1..])]}0", $"{fl2[int.Parse(f2[^1..])]}1", $"{fl2[int.Parse(f2[^1..])]}2", $"{fl2[int.Parse(f2[^1..])]}3", };
+                if (value is not null)
+                    PL3 = new[] { $"{fl2[int.Parse(f2[^1..])]}0", $"{fl2[int.Parse(f2[^1..])]}1", $"{fl2[int.Parse(f2[^1..])]}2", $"{fl2[int.Parse(f2[^1..])]}3", };
             }
         }
         public string P3
@@ -72,7 +74,8 @@ namespace ComboBoxTest.ViewModels
             set
             {
                 this.RaiseAndSetIfChanged(ref f3, value);
-                PL4 = new[] { $"{fl3[int.Parse(f3[^1..])]}0", $"{fl3[int.Parse(f3[^1..])]}1", $"{fl3[int.Parse(f3[^1..])]}2", $"{fl3[int.Parse(f3[^1..])]}3", };
+                if (value is not null)
+                    PL4 = new[] { $"{fl3[int.Parse(f3[^1..])]}0", $"{fl3[int.Parse(f3[^1..])]}1", $"{fl3[int.Parse(f3[^1..])]}2", $"{fl3[int.Parse(f3[^1..])]}3", };
             }
         }
         public string P4
